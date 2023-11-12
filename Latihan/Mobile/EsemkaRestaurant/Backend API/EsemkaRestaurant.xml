@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EsemkaRestaurant</name>
+    </assembly>
+    <members>
+        <member name="M:EsemkaRestaurant.Controllers.G06LoginController.Login(EsemkaRestaurant.Controllers.LoginParam)">
+             <summary>
+             Untuk Login
+             </summary>
+             <remarks>
+             Sample request 1:
+            
+                 POST /Api/Auth
+                 {
+                    "email": "iclarricoates3@clickbank.net",
+                    "password": "fTa9aI71rEm"
+                 }
+                 
+             Sample request 2:
+             
+                 POST /Api/Auth
+                 {
+                    "email": "rlochran4@hatena.ne.jp",
+                    "password": "YLhGt2JDH01N"
+                 }
+            
+             </remarks>
+             <param name="param"></param>
+             <returns>
+             
+             {
+                 token: "",
+                 expired: "",
+             }
+             
+             </returns>
+             <response code="400">If the user not found.</response>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EzemKofi.API</name>
+    </assembly>
+    <members>
+        <member name="M:EzemKofi.API.Controllers.CheckoutController.DoCheckout(System.Collections.Generic.List{EzemKofi.API.Controllers.CheckoutItemDTO})">
+            <summary>
+            Cart checkout endpoint
+            </summary>
+            <response code="200">Successfully checkout the cart</response>
+            <response code="401">Unauthorized access (not login yet / no token provided)</response>
+            <response code="400">Cart is empty</response>
+        </member>
+        <member name="M:EzemKofi.API.Controllers.CoffeeController.GetCoffeeByFilter(System.Nullable{System.Int32},System.String)">
+            <summary>
+            Coffee list with filter endpoint
+            </summary>
+            <response code="200">Successfully get coffee list</response>
+        </member>
+        <member name="M:EzemKofi.API.Controllers.CoffeeController.GetCoffee(System.Int32)">
+            <summary>
+            Coffee detail endpoint
+            </summary>
+            <response code="200">Successfully get a coffee information</response>
+            <response code="404">Coffee not found</response>
+        </member>
+        <member name="M:EzemKofi.API.Controllers.CoffeeController.GetTopPicksCoffee">
+            <summary>
+            Top picks coffee list endpoint
+            </summary>
+            <response code="200">Successfully get top picks coffee list</response>
+        </member>
+        <member name="M:EzemKofi.API.Controllers.CoffeeTypeController.GetCoffeeCategory">
+            <summary>
+            Coffee category list endpoint
+            </summary>
+            <response code="200">Successfully get coffee category list</response>
+        </member>
+        <member name="M:EzemKofi.API.Controllers.UserController.Auth(EzemKofi.API.Controllers.AuthDTO)">
+            <summary>
+            User login endpoint
+            </summary>
+            <response code="200">Successfully login and get login token</response>
+            <response code="404">User not found</response>
+        </member>
+        <member name="M:EzemKofi.API.Controllers.UserController.Register(EzemKofi.API.Controllers.RegisterDTO)">
+            <summary>
+            User register endpoint
+            </summary>
+            <response code="200">Successfully register as a new user</response>
+            <response code="400">Username already exists</response>
+        </member>
+        <member name="M:EzemKofi.API.Controllers.UserController.GetMyInformation">
+            <summary>
+            User information endpoint
+            </summary>
+            <response code="200">Successfully get user information</response>
+            <response code="401">Unauthorized access (not login yet / no token provided)</response>
+        </member>
+        <member name="M:EzemKofi.API.Controllers.UserController.GetMyTransaction">
+            <summary>
+            User transaction list endpoint
+            </summary>
+            <response code="200">Successfully get user transaction list</response>
+            <response code="401">Unauthorized access (not login yet / no token provided)</response>
+        </member>
+    </members>
+</doc>
